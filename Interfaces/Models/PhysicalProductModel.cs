@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceExample.Model
 {
-    class Products
+    class Products : IProductModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -16,7 +16,7 @@ namespace InterfaceExample.Model
         {
             if (HasOrderBeenShipped == false)
             {
-                Console.WriteLine($"Your { Name } has been emailed to { customer.Email }. ");
+                Console.WriteLine($"Your { Name } has been shipped to { customer.Address } in { customer.City }. ");
                 HasOrderBeenShipped = true;
             }
         }

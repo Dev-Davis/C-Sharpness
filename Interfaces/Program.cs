@@ -11,10 +11,10 @@ namespace InterfaceExample
     {
         static void Main(string[] args)
         {
-            List<Products> cart = AddProducts();
+            List<IProductModel> cart = AddProducts();
             Customer customer = GetCustomer();
 
-            foreach (Products prod in cart)
+            foreach (IProductModel prod in cart)
             {
                 prod.ShipItem(customer);
             }
@@ -29,20 +29,21 @@ namespace InterfaceExample
             {
                 FirstName = "Dot",
                 LastName = "Dang",
-                Address = "4501 Packard Drive",
+                Address = "22 Jump Street",
                 City = "Nashville",
                 Email = "something@sexy.com",
                 PhoneNumber = "555-555-5555"
             };
         }
 
-        private static List<Products> AddProducts()
+        private static List<IProductModel> AddProducts()
         {
-            List<Products> output = new List<Products>();
+            List<IProductModel> output = new List<IProductModel>();
 
             output.Add(new Products { Name = "Portable Monitor" });
             output.Add(new Products { Name = "PlayStation 4 Controller" });
             output.Add(new Products { Name = "External SSD" });
+            output.Add(new DigitalProduct { Name = "Mastering C# in Visual Studio" });
 
             return output;
         }
