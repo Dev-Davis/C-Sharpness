@@ -1,4 +1,5 @@
 ﻿using InterfaceExample.Model;
+using Interfaces.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,11 @@ namespace InterfaceExample
             foreach (IProductModel prod in cart)
             {
                 prod.ShipItem(customer);
+
+                if (prod is IDigitalProductModel digital)
+                {
+                    Console.WriteLine($"For the { digital.Name } you have {digital.TotalDownloadsLeft } downloads left.");
+                }
             }
 
             Console.ReadLine();
