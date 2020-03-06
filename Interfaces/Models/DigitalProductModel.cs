@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Interfaces.Models;
+using System;
 
 namespace InterfaceExample.Model
 {
-    public class DigitalProduct : IProductModel
+    public class DigitalProduct : IProductModel, IDigitalProductModel
+
     {
         public int Id { get; set; }
         public string Name { get; set; }
