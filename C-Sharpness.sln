@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C-Sharpness", "C-Sharpness\C-Sharpness.csproj", "{B9B3A6F6-85AD-4791-9E1E-F5A9E927E759}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-Sharpness", "C-Sharpness\C-Sharpness.csproj", "{B9B3A6F6-85AD-4791-9E1E-F5A9E927E759}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{2ED59779-B8DF-40F1-A259-8F2EC638BDE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{2ED59779-B8DF-40F1-A259-8F2EC638BDE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{17D09874-5152-4A4C-9E3E-733F3AADA54D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2ED59779-B8DF-40F1-A259-8F2EC638BDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ED59779-B8DF-40F1-A259-8F2EC638BDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ED59779-B8DF-40F1-A259-8F2EC638BDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D09874-5152-4A4C-9E3E-733F3AADA54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D09874-5152-4A4C-9E3E-733F3AADA54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D09874-5152-4A4C-9E3E-733F3AADA54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D09874-5152-4A4C-9E3E-733F3AADA54D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
