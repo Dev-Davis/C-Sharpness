@@ -10,14 +10,14 @@ namespace InterfaceExample.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public bool HasOrderBeenShipped { get; private set; }
+        public bool HasOrderBeenCompleted { get; private set; }
 
         public void ShipItem(Customer customer)
         {
-            if (HasOrderBeenShipped == false)
+            if (HasOrderBeenCompleted == false)
             {
                 Console.WriteLine($"Your { Name } has been shipped to { customer.Address } in { customer.City }. ");
-                HasOrderBeenShipped = true;
+                HasOrderBeenCompleted = true;
             }
         }
     }

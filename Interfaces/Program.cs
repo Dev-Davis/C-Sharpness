@@ -2,9 +2,6 @@
 using Interfaces.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace InterfaceExample
 {
@@ -50,6 +47,7 @@ namespace InterfaceExample
             output.Add(new Products { Name = "PlayStation 4 Controller" });
             output.Add(new Products { Name = "External SSD" });
             output.Add(new DigitalProduct { Name = "Mastering C# in Visual Studio" });
+            //output.Add(new CourseProductModel { Name = "Mastering Life" });
 
             return output;
         }

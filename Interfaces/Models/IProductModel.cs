@@ -10,7 +10,7 @@ namespace InterfaceExample.Model
     {
         int Id { get; set; }
         string Name { get; set; }
-        bool HasOrderBeenShipped { get; }
+        bool HasOrderBeenCompleted { get; }
 
         void ShipItem(Customer customer);
     }
