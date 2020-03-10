@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-Sharpness", "C-Sharpness\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{2ED59779-B8DF-40F1-A259-8F2EC638BDE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{17D09874-5152-4A4C-9E3E-733F3AADA54D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{17D09874-5152-4A4C-9E3E-733F3AADA54D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{8EE69719-FF2D-45C3-A262-FB95A8EF2FB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{17D09874-5152-4A4C-9E3E-733F3AADA54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17D09874-5152-4A4C-9E3E-733F3AADA54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17D09874-5152-4A4C-9E3E-733F3AADA54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE69719-FF2D-45C3-A262-FB95A8EF2FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE69719-FF2D-45C3-A262-FB95A8EF2FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE69719-FF2D-45C3-A262-FB95A8EF2FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE69719-FF2D-45C3-A262-FB95A8EF2FB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

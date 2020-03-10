@@ -9,19 +9,19 @@ namespace InterfaceExample.Model
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public bool HasOrderBeenShipped { get; private set; }
+        public bool HasOrderBeenCompleted { get; private set; }
 
         public int TotalDownloadsLeft { get; private set; } = 5;
 
         public void ShipItem(Customer customer)
         {
-            if (HasOrderBeenShipped == false)
+            if (HasOrderBeenCompleted == false)
             {
                 Console.WriteLine($"Your { Name } has been emailed to { customer.Email }. ");
                 TotalDownloadsLeft -= 1;
                 if (TotalDownloadsLeft < 1)
                 {
-                    HasOrderBeenShipped = true;
+                    HasOrderBeenCompleted = true;
                     TotalDownloadsLeft = 0;
                 }
             }   
