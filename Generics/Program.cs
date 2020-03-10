@@ -12,7 +12,9 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
 
+            Console.ReadLine();
 
+            DemonstrateTextFileStorage();
 
             Console.WriteLine();
             Console.Write("Press enter to shut down...");
@@ -28,7 +30,7 @@ namespace ConsoleUI
 
             PopulateLists(people, logs);
 
-            OriginalTextFileProcessor.SavePeople(people, peopleFile);
+            // OriginalTextFileProcessor.SavePeople(people, peopleFile);
 
             var newPeople = OriginalTextFileProcessor.LoadPeople(peopleFile);
 
