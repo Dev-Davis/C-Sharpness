@@ -8,9 +8,11 @@ namespace ExceptionsLibrary
 {
     public class DemoCode
     {
+         
         public int GetNumber(int position)
         {
             int[] numbers = new int[] { 1, 4, 7, 2 };
+            return numbers[position];
         }
     }
 }
