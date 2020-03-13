@@ -31,14 +31,20 @@ namespace ConsoleUI
 
             PopulateLists(people, logs);
 
-            OriginalTextFileProcessor.SaveLogs(logs, logFile);
+            /*** New way of doing things * with generics ***/
 
-            var newLogs = OriginalTextFileProcessor.LoadLogs(logFile);
 
-            foreach (var log in newLogs)
-            {
-                Console.WriteLine($"{ log.ErrorCode }: { log.Message } at { log.TimeOfEvent.ToShortTimeString() }");
-            }
+
+            /*** Old way of doing things * non generics ***/
+
+            //OriginalTextFileProcessor.SaveLogs(logs, logFile);
+
+            //var newLogs = OriginalTextFileProcessor.LoadLogs(logFile);
+
+            //foreach (var log in newLogs)
+            //{
+            //    Console.WriteLine($"{ log.ErrorCode }: { log.Message } at { log.TimeOfEvent.ToShortTimeString() }");
+            //}
 
             //OriginalTextFileProcessor.SavePeople(people, peopleFile);
 
