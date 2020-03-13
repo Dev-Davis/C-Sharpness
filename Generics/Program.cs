@@ -31,7 +31,11 @@ namespace ConsoleUI
 
             PopulateLists(people, logs);
 
-            /*** Old way of doing things. Non generics ***/
+            /*** New way of doing things * with generics ***/
+
+
+
+            /*** Old way of doing things * non generics ***/
 
             //OriginalTextFileProcessor.SaveLogs(logs, logFile);
 
